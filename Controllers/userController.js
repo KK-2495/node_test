@@ -28,28 +28,10 @@ export const register = async (req,res) =>{
     }
 }
 
-// export const tokenGenerate = async (req,res) =>{
-//     const job = new CronJob('* * * * *',
-//     (await AwdizToken.find({}).exec()),()=>new AwdizToken({
-//              accessToken: "aa2244"
-//         }),
-//     // const newToken = new AwdizToken({
-//     //     accessToken
-//     // });
-//     job.start()
-// );
-// }
 
 
-// export const tokenGenerate = async (req,res) =>{
-//     const job = new CronJob('* * * * *',
-//     (await AwdizToken.find({}).exec()),
-//     () => const newToken = new AwdizToken({
-//         accessToken
-//     });
-//     job.start()
-// );
-// }
+
+
 
 
 export const login = async (req,res) =>{

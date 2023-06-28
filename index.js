@@ -12,7 +12,7 @@ app.use(express.json());
 app.use('/api/v1', router)
 
 
-app.get("/ping", (req,res) => {
+app.get("/node-test", (req,res) => {
     return res.send("node test ");
 })
 

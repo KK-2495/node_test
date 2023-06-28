@@ -13,7 +13,7 @@ app.use('/api/v1', router)
 
 
 app.get("/ping", (req,res) => {
-    return res.send("Pong");
+    return res.send("node test ");
 })
 
 

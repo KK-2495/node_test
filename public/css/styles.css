@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-form {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 22px;
+#form {
     display: flex;
     flex-direction: column;
     margin: auto;

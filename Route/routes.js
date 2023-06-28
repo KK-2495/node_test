@@ -34,7 +34,6 @@ async ()=>{
 job.start();
 
 
-
 router.post('/register', registerAuth, register);
 router.post('/login', loginAuth, login);
 router.post('/add-product', productAuth, addProduct);

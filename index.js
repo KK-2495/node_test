@@ -11,7 +11,7 @@ const app = express();
 dotenv.config();
 
 app.use(express.static('public'));
-app.use(express.urlencoded({extended:true}));
+app.use(express.urlencoded({ extended:true }));
 
 const __dirname = path.resolve();
 
@@ -22,6 +22,16 @@ app.use('/api/v1', router)
 
 app.get("/register", (req,res) => {
     return res.sendFile(__dirname +  '/public/html/register.html');
+})
+
+app.get("/urlencoded", (req, res) => {
+    res.send(
+        `<form method='post' action='/login'>
+            <input name="email" placeholder="text" />
+            <input name="password"  placeholder="password"/>
+            <input type='submit' value="LOgin"/>
+        </form>`
+    )
 })
 
 app.post('/login', (req, res) => {

@@ -18,8 +18,8 @@ app.get("/node-test", (req,res) => {
 
 
 
-mongoose.connect(process.env.MONGODB_URL)
+mongoose.connect('mongodb+srv://Krish24:Krish%402495@cluster0.s8xz5ha.mongodb.net/Node_Test?retryWrites=true&w=majority')
 .then(()=>console.log('DB-Connected'))
 .catch((err)=>console.log(err));
 
-app.listen(process.env.PORT);
+app.listen(8000);
